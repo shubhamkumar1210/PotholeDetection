@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>For navbar</title>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="static/bootstrap.min.css">
+	
+	
+		
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Datatable -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+  <script type = "text/javascript"  src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  <script type = "text/javascript"  src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+  <script type = "text/javascript"  src="https://cdn.datatables.net/plug-ins/1.10.15/dataRender/datetime.js"></script>
+  
+  
+	{% block head %}{% endblock %}
+</head>
+<body style="background-color:#e2e8f0">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+  <a class="navbar-brand" ><b>RDMSystem</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/profile">Profile<span class="sr-only">(current)</span></a>
+      </li>
+	  
+	   <li class="nav-item active">
+        <a class="nav-link" href="/dashboard">File Complaint <span class="sr-only">(current)</span></a>
+      </li>
+	  
+	  <li class="nav-item dropdown">
+        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          View Complaints
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/show">All Complaints <span class="sr-only">(current)</span></a>
+          <a class="dropdown-item" href="/showMyComplaint">My Complaint <span class="sr-only">(current)</span></a>
+        </div>
+      </li>
+	  
+	  <li class="nav-item active">
+        
+      </li>
+	  
+	  <li class="nav-item active">
+        <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+      </li>
+	  
+	  <li class="nav-item active">
+        <a class="nav-link" href="#">Contact Us <span class="sr-only">(current)</span></a>
+      </li>
+	  
+	  
+      
+    </ul>
+    
+      <a class="btn btn-outline-success my-2 my-sm-0" href="/logout" >Logout</a>
+    
+  </div>
+</nav>
+
+
+
+ 	{% block body %}{% endblock %}
+
+	
+</body>
+</html>
